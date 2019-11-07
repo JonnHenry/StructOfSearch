@@ -1,5 +1,7 @@
 # StructOfSearch
-Some structures used in algorithms of search in artificial inteligence
+
+Some structures used in algorithms of search in artificial intelligence
+
 Install packages in R 
 
         Install from GitHub :  devtools::install_github("JonnHenry/StructOfSearch")
