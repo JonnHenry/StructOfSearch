@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+export(cola)
+export(colaSorted)
+export(pila)
