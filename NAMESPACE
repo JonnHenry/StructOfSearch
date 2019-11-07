@@ -1,4 +1,4 @@
 exportPattern("^[[:alpha:]]+")
-export(cola)
-export(colaSorted)
-export(pila)
+export(queue)
+export(queueSorted)
+export(stack)

@@ -1,4 +1,4 @@
-#' @title Pila
+#' @title stack
 #'
 #' @description This class in R represent a stack using list
 #'
@@ -8,11 +8,11 @@
 #'
 #' @examples
 #'
-#' pila<-pila()
+#' stack<-stack()
 #'
-#' @export pila
+#' @export stack
 
-pila <- setRefClass("pila", fields = list(
+stack <- setRefClass("stack", fields = list(
   pila = "list"),
   methods = list(
     look = function() {

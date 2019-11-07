@@ -1,4 +1,4 @@
-#' @title Cola
+#' @title queue
 #'
 #' @description This class in R represent a queue using list
 #'
@@ -8,11 +8,11 @@
 #'
 #' @examples
 #'
-#' cola<-cola()
+#' queue<-queue()
 #'
-#' @export cola
+#' @export queue
 
-cola <- setRefClass("cola", fields = list(
+queue <- setRefClass("queue", fields = list(
   cola = "list"),
   methods = list(
     look = function() {

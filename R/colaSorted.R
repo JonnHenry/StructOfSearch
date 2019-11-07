@@ -1,4 +1,4 @@
-#' @title ColaSorted
+#' @title queueSorted
 #'
 #' @description This class in R represent a queue sorted using dataframes
 #'
@@ -8,14 +8,14 @@
 #'
 #' @examples
 #'
-#' cola<-colaSortedGen(cola=data.frame("nodo"=character(),peso=numeric(),heuristica=numeric(),"suma"=numeric(),stringsAsFactors = FALSE))
-#' cola<-colaSortedGen(cola=data.frame("nodo"=character(),"heuristica"=numeric(),stringsAsFactors = FALSE))
+#' queueSorted<-queueSorted(queue=data.frame("nodo"=character(),peso=numeric(),heuristica=numeric(),"suma"=numeric(),stringsAsFactors = FALSE))
+#' queueSorted<-queueSorted(queue=data.frame("nodo"=character(),"heuristica"=numeric(),stringsAsFactors = FALSE))
 #'
 #'
-#' @export colaSorted
+#' @export queueSorted
 
-colaSorted <- setRefClass("colaSorted", fields = list(
-  cola = "data.frame"),
+queueSorted <- setRefClass("queueSorted", fields = list(
+  queue = "data.frame"),
   methods = list(
     look = function() {
       if (isEmpty()) {
