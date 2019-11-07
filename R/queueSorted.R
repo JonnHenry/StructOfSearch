@@ -14,6 +14,7 @@
 #'
 #' @export queueSorted
 
+
 queueSorted <- setRefClass("queueSorted", fields = list(
   queue = "data.frame"),
   methods = list(
@@ -21,29 +22,29 @@ queueSorted <- setRefClass("queueSorted", fields = list(
       if (isEmpty()) {
         return(NULL)
       }else{
-        return(cola)
+        return(queue)
       }
     },
     pop = function() {
       if (isEmpty()) {
         return(NULL)
       } else {
-        valor <- cola[c(1),]
-        cola <<-cola[-c(1),]
+        valor <- queue[c(1),]
+        queue <<-queue[-c(1),]
         return(valor)
       }
     },
     sort = function(campoOrdenar){
-      cola<<-cola[order(as.numeric(cola[[campoOrdenar]]),na.last = TRUE,method = c("radix"),decreasing = FALSE),]
+      queue<<-queue[order(as.numeric(queue[[campoOrdenar]]),na.last = TRUE,method = c("radix"),decreasing = FALSE),]
     },
     push = function(elemento) {
-      cola[nrow(cola) + 1,]<<-elemento
+      queue[nrow(queue) + 1,]<<-elemento
     },
     clean = function() {
-      cola <<- cola[-c(1:nrow(cola)),]
+      queue <<- queue[-c(1:nrow(queue)),]
     },
     isEmpty = function() {
-      if (nrow(cola) == 0) {
+      if (nrow(queue) == 0) {
         return(TRUE)
       } else {
         return(FALSE)

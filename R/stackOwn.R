@@ -8,11 +8,11 @@
 #'
 #' @examples
 #'
-#' stack<-stack()
+#' stackOwn<-stackOwn()
 #'
-#' @export stack
+#' @export stackOwn
 
-stack <- setRefClass("stack", fields = list(
+stackOwn <- setRefClass("stackOwn", fields = list(
   pila = "list"),
   methods = list(
     look = function() {
@@ -23,17 +23,17 @@ stack <- setRefClass("stack", fields = list(
         return(NULL)
       } else {
         valor <- pila[[length(pila)]]
-        pila[[ultimoValor]] <<- NULL
+        pila[[length(pila)]] <<- NULL
         return(valor)
       }
     },
     push = function(elemento) {
-      punteroFin <- length(pila) + 1
-      pila[[punteroFin]] <<- elemento
+      pila[[length(pila) + 1]] <<- elemento
     },
     clean = function() {
       pila <<- list()
     },
+    
     isEmpty = function() {
       if (length(pila) == 0) {
         return(TRUE)

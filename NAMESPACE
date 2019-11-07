@@ -1,4 +1,4 @@
 exportPattern("^[[:alpha:]]+")
 export(queue)
 export(queueSorted)
-export(stack)
+export(stackOwn)
