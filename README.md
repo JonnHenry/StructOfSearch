@@ -2,7 +2,7 @@
 Some structures used in algorithms of search in artificial inteligence
 Install packages in R 
 
-Install from GitHub :  devtools::install_github("JonnHenry/StructOfSearch")
+        Install from GitHub :  devtools::install_github("JonnHenry/StructOfSearch")
 
 To use this package you need import the libray with the next line in your script
 
