@@ -33,7 +33,6 @@ stackOwn <- setRefClass("stackOwn", fields = list(
     clean = function() {
       pila <<- list()
     },
-    
     isEmpty = function() {
       if (length(pila) == 0) {
         return(TRUE)
