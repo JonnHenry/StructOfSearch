@@ -1,8 +1,8 @@
 # StructOfSearch
 
-Some structures used in algorithms of search in artificial intelligence
+A few data structures used in AI search algorithms
 
-Install packages in R 
+Install package in R 
 
         Install from GitHub : devtools::install_github("JonnHenry/StructOfSearch")
 
@@ -10,7 +10,7 @@ To use this package you need import the libray with the next line in your script
 
     library(structOfSearch)
 
-This package contain 3 basic structures of data
+This package contains 3 basic data structures
 
 * **queue**
 
@@ -19,7 +19,8 @@ This package contain 3 basic structures of data
 * **queue sorted**
 
 ## Queue
-To use a queue we need create an object of class queque of the next way
+
+To perform queue need to create a Queue object by the next way
 
         queue<-queue() 
 
@@ -37,7 +38,8 @@ clean=> clean the queue
 isEmpty=> check if the queue is empty
 ```
 ## Stack
-To use a stack we need create an object of class stack of the next way
+
+To perform stack need to create a stackOwn object by the next way
 
         stackOwn<-stackOwn() 
 
@@ -57,7 +59,7 @@ isEmpty=> check if the queue is empty
 
 ## Queue Sorted
 
-To use a queue sorted we need create an object of class queueSorted of the next way
+To perform sorted queue need to create a queueSorted object by the next way
 
         queueSorted<-queueSorted(queue="data.frame") 
         
